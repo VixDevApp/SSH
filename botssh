@@ -1,6 +1,6 @@
 #!/bin/bash
 clear
-#--------@ALFAINTERNET-----------#
+#--------@ONUMB-----------#
 source ShellBot.sh
 touch lista
 [[ -z $1 ]] && {
@@ -32,11 +32,11 @@ criarteste() {
         --text "⚠️ VC JA CRIOU SSH HOJE ⚠️"
       return 0
     }
-    usuario=$(echo TESTE$(( RANDOM% + 999 )))
+    usuario=$(echo TESTE$(( RANDOM% + 250 )))
     senha=$((RANDOM% + 999999))
     limite='1'
-    tempo='1'
-    tuserdate=$(date '+%C%y/%m/%d' -d " +1 days")
+    tempo='4'
+    tuserdate=$(date '+%C%y/%m/%d' -d " +2 days")
     useradd -M -N -s /bin/false $usuario -e $tuserdate > /dev/null 2>&1
     (echo "$senha";echo "$senha") | passwd $usuario > /dev/null 2>&1
     echo "$senha" > /etc/SSHPlus/senha/$usuario
