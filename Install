@@ -12,7 +12,7 @@
     rm -rf $HOME/BOT/botssh
     wget https://raw.githubusercontent.com/VixDevApp/SSH/main/Install >/dev/null 2>&1
     rm -rf $HOME/ShellBot.sh
-    wget https://raw.githubusercontent.com/Onumb/SSH/main/ShellBot.sh >/dev/null 2>&1
+    wget https://raw.githubusercontent.com/VixDevApp/SSH/main/ShellBot.sh >/dev/null 2>&1
     chmod 777 botssh 
     chmod 777 ShellBot.sh
     echo ""
